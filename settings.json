@@ -1,0 +1,103 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "wsl_connections": [
+        {
+            "distro_name": "Ubuntu-24.04",
+            "user": null,
+            "projects": [
+                {
+                    "paths": ["/home/cwilson/dev"]
+                },
+                {
+                    "paths": ["/home/cwilson/dev/CREST"]
+                },
+                {
+                    "paths": ["/home/cwilson/dev/signin-board"]
+                }
+            ]
+        }
+    ],
+    "icon_theme": {
+        "mode": "dark",
+        "light": "Material Icon Theme",
+        "dark": "Material Icon Theme"
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "session": {
+        "trust_all_worktrees": true
+    },
+    "vim_mode": true,
+    "ui_font_size": 16,
+    "buffer_font_size": 15,
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Phosphor Default"
+    },
+    "languages": {
+        "Python": {
+            "formatter": {
+                "external": {
+                    "command": "black",
+                    "arguments": ["-", "--quiet"]
+                }
+            },
+            "format_on_save": "on"
+        },
+        "TypeScript": {
+            "formatter": "prettier",
+            "format_on_save": "on"
+        },
+        "JavaScript": {
+            "formatter": "prettier",
+            "format_on_save": "on"
+        }
+    },
+    "buffer_font_family": "Monaspace Radon",
+    "buffer_font_features": {
+        "calt": true,
+        "liga": true,
+        "ss01": true,
+        "ss02": true,
+        "ss03": true,
+        "ss04": true,
+        "ss05": true,
+        "ss06": true,
+        "ss07": true,
+        "ss08": true
+    },
+    "inlay_hints": {
+        "enabled": true
+    },
+    "auto_install_extensions": {
+        "bamboo-theme": true,
+        "csv": true,
+        "dependi": true,
+        "docker-compose": true,
+        "dockerfile": true,
+        "html": true,
+        "material-icon-theme": true,
+        "powershell": true,
+        "tailwind-theme": true,
+        "toml": true,
+        "vue": true
+    },
+    "agent_servers": {
+        "claude-acp": {
+            "type": "registry"
+        }
+    },
+    "agent": {
+        "provider": "claude-acp"
+    }
+}

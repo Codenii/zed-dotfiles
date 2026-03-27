@@ -1,0 +1,7 @@
+id = "phosphor"
+name = "Phosphor"
+version = "0.0.1"
+schema_version = 1
+authors = ["Codenii"]
+description = "Dark Green theme, with yellow highlights. Includes bold and punchy syntax highlighting"
+repository = "https://github.com/your-name/my-zed-extension"
