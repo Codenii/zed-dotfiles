@@ -96,8 +96,5 @@
         "claude-acp": {
             "type": "registry"
         }
-    },
-    "agent": {
-        "provider": "claude-acp"
     }
 }
