@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "edit_predictions": {
+        "provider": "copilot"
+    },
     "wsl_connections": [
         {
             "distro_name": "Ubuntu-24.04",
@@ -17,6 +20,9 @@
                 },
                 {
                     "paths": ["/home/cwilson/dev/CREST"]
+                },
+                {
+                    "paths": ["/home/cwilson/dev/meridian"]
                 },
                 {
                     "paths": ["/home/cwilson/dev/signin-board"]
@@ -80,7 +86,6 @@
         "enabled": true
     },
     "auto_install_extensions": {
-        "bamboo-theme": true,
         "csv": true,
         "dependi": true,
         "docker-compose": true,
@@ -93,8 +98,24 @@
         "vue": true
     },
     "agent_servers": {
+        "github-copilot-cli": {
+            "favorite_config_option_values": {
+                "model": ["gpt-5-mini", "claude-sonnet-4.6", "gpt-4.1"]
+            },
+            "type": "registry"
+        },
         "claude-acp": {
             "type": "registry"
+        }
+    },
+    "agent": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-4.1"
+        },
+        "commit_message_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-4.1"
         }
     }
 }
